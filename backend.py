@@ -32,6 +32,18 @@ class ChatBot:
 
             score_list.append(response_score)
 
+        if self.user_prompt == "":
+            return random_response.generate()
+
+        max_num = max(score_list)
+        response_index = score_list.index(max_num)
+
+        if max_num != 0:
+            response_message = contents[response_index]['bot_response']
+            return response_message
+
+        return random_response.generate()
+
 
 if __name__ == "__main__":
     while True:
