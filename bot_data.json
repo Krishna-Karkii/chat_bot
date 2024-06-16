@@ -1,0 +1,87 @@
+[
+  {
+      "response_type": "greeting",
+      "user_input": ["hello", "hi", "hey"],
+      "bot_response": "Hello! How can I assist you today?",
+      "required_words": []
+  },
+  {
+    "response_type": "greeting",
+    "user_input": ["see you", "goodbye", "bye"],
+    "bot_response": "See you later!",
+    "required_words": []
+  },
+  {
+    "response_type": "greeting",
+    "user_input": ["nice", "to", "meet", "you"],
+    "bot_response": "The pleasure is all mine!",
+    "required_words": ["nice", "meet", "you"]
+  },
+  {
+    "response_type": "question",
+    "user_input": ["how", "to", "learn", "code", "coding", "apps"],
+    "bot_response": "Start by typing: 'How to learn coding' on Google.",
+    "required_words": ["learn", "code"]
+  },
+  {
+    "response_type": "question",
+    "user_input": ["refund", "how", "can", "I", "get"],
+    "bot_response": "We don't offer refunds for free education.",
+    "required_words": ["refund", "i"]
+  },
+  {
+    "response_type": "question",
+    "user_input": ["how", "are", "you"],
+    "bot_response": "I'm great! Thanks for asking.",
+    "required_words": ["how", "are", "you"]
+  },
+  {
+    "response_type": "command",
+    "user_input": ["have", "sex", "with", "me"],
+    "bot_response": "I'm too horny for you!",
+    "required_words": ["have", "sex", "me"]
+  },
+  {
+      "response_type": "question",
+      "user_input": ["what", "is", "your", "name"],
+      "bot_response": "I'm ChatBot, your virtual assistant.",
+      "required_words": ["what", "is", "your", "name"]
+  },
+  {
+      "response_type": "question",
+      "user_input": ["what", "can", "you", "do"],
+      "bot_response": "I can help you with a variety of tasks, such as answering questions, providing information, and more.",
+      "required_words": ["what", "can", "you", "do"]
+  },
+  {
+      "response_type": "question",
+      "user_input": ["tell", "me", "a", "joke"],
+      "bot_response": "Why don't scientists trust atoms? Because they make up everything!",
+      "required_words": ["tell", "me", "a", "joke"]
+  },
+  {
+      "response_type": "question",
+      "user_input": ["what", "is", "the", "weather", "like"],
+      "bot_response": "I can't check the weather right now, but you can use a weather app or website to find out.",
+      "required_words": ["weather"]
+  },
+  {
+      "response_type": "question",
+      "user_input": ["how", "old", "are", "you"],
+      "bot_response": "I'm ageless, but I was created to assist you anytime!",
+      "required_words": ["how", "old", "you"]
+  },
+  {
+      "response_type": "information",
+      "user_input": ["thank", "you", "thanks"],
+      "bot_response": "You're welcome! If you have any more questions, feel free to ask.",
+      "required_words": []
+  },
+  {
+      "response_type": "information",
+      "user_input": ["who", "created", "you"],
+      "bot_response": "I was created by a My one and only master('gosuji-sama') Krishna Karki.",
+      "required_words": ["who", "created", "you"]
+  }
+
+]
