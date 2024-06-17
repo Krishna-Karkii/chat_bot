@@ -18,6 +18,7 @@ class ChatBotWindow(QMainWindow):
         # input area
         self.input_widget = QLineEdit(self)
         self.input_widget.setGeometry(10, 340, 460, 35)
+        self.input_widget.returnPressed.connect(self.send_response)
 
         # Button Widget
         self.button = QPushButton("Send", self)
@@ -30,6 +31,13 @@ class ChatBotWindow(QMainWindow):
         user_prompt = self.input_widget.text()
         self.text_display_window.append(f"<p style='color: white'>You: {user_prompt}</p>")
         self.input_widget.clear()
+
+        thread = threading.Thread(target=self.bot_response, args=(user_prompt,))
+        thread.start()
+
+    def bot_response(self, user_prompt):
+        response = get_data(user_prompt.strip())
+        self.text_display_window.append(f"<p style='color: blue; background-color: gray'>Bot: {response}</P>")
 
 
 app = QApplication(sys.argv)
