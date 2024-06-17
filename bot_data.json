@@ -36,12 +36,6 @@
     "required_words": ["how", "are", "you"]
   },
   {
-    "response_type": "command",
-    "user_input": ["have", "sex", "with", "me"],
-    "bot_response": "I'm too horny for you!",
-    "required_words": ["have", "sex", "me"]
-  },
-  {
       "response_type": "question",
       "user_input": ["what", "is", "your", "name"],
       "bot_response": "I'm ChatBot, your virtual assistant.",
